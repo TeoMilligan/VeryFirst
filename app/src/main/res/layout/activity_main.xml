@@ -4,53 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-   <!--   <TextView
-       android:id="@+id/textView"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.223"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_weight="1"
-       android:text="Hello World!" />
+   <TextView
+       android:id="@+id/normal"
+       android:layout_width="300dp"
+       android:layout_height="400dp"
+       android:layout_marginTop="10dp"
+       android:background="#2E4D72"
+       android:gravity="bottom|end"
+       android:padding="10dp"
+       android:text="Width 200dp"
+       android:textColor="#FFF"
+       android:textSize="26sp"
+       android:textStyle="normal" />
 
    <TextView
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/textView"
-       android:layout_weight="1"
+       android:id="@+id/bold"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:text="jdfnbbhjbdfvhbfjdhbveljkvjkendc" />-->
+       android:layout_marginTop="10dp"
+       android:background="#764A73"
+       android:padding="20dp"
+       android:text="Width wrap_content"
+       android:textColor="#FFF"
+       android:textSize="26sp"
+       android:textStyle="bold" />
 
    <TextView
-       android:id="@+id/text"
-       android:layout_width="wrap_content"
-       android:layout_height="200px"
-
-       android:text="Android is the Best"
-       android:textSize="30sp"
-       android:layout_weight="1"/>
-
-     <View
-         android:foreground="@drawable/ic_launcher_background"
-       android:layout_width="wrap_content"
-         android:layout_weight="4"
-       android:layout_height="200px" />
-
-   <Button
-       android:id="@+id/button"
+       android:id="@+id/italic"
        android:layout_width="match_parent"
-       android:layout_height="100px"
-       android:text="Approved"
-       android:layout_weight="1"/>
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:background="#17556D"
+       android:gravity="center"
+       android:padding="20dp"
+       android:text="Width match_parent"
+       android:textColor="#FFF"
+       android:textSize="26sp"
+       android:textStyle="italic" />
+
+
 
 </LinearLayout>
