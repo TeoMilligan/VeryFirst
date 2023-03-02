@@ -88,6 +88,7 @@
         app:layout_constraintTop_toBottomOf="@+id/seekBar5" />
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="377dp"
         android:layout_height="47dp"
         android:layout_marginStart="20dp"
@@ -131,12 +132,14 @@
         android:layout_width="307dp"
         android:layout_height="372dp"
         android:layout_marginStart="49dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="54dp"
         android:layout_marginBottom="30dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" >
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
 
         <Button
             android:id="@+id/button18"
