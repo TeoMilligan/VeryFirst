@@ -1,14 +1,211 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+   <!--
+   <TextView
+       android:id="@+id/view1"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="80dp"
+       android:layout_marginTop="72dp"
+       android:layout_marginEnd="16dp"
+       android:text="View1"
+       android:textSize="24sp"
+       app:layout_constraintEnd_toStartOf="@+id/button2"
 
 
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintWidth_default="spread" />
+
+   <TextView
+       android:id="@+id/View2"
+       android:layout_width="76dp"
+       android:layout_height="40dp"
+       android:layout_marginLeft="272dp"
+       android:text="View2"
+       android:textSize="14sp"
+       app:layout_constraintBaseline_toBaselineOf="@id/view1"
+       app:layout_constraintLeft_toRightOf="@id/view1" />
+
+   <TextView
+       android:id="@+id/View3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="108dp"
+       android:layout_marginTop="144dp"
+       android:text="View3"
+       android:textSize="18sp"
+       app:layout_constraintLeft_toRightOf="@id/view1"
+       app:layout_constraintTop_toBottomOf="@id/view1" />
+
+   <TextView
+       android:id="@+id/View4"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="212dp"
+       android:text="View4"
+       android:textSize="14sp"
+       app:layout_constraintBaseline_toBaselineOf="@id/view1"
+       app:layout_constraintLeft_toRightOf="@id/view1" />
+
+   <Button
+       android:id="@+id/button2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="364dp"
+       android:layout_marginEnd="252dp"
+       android:text="Button"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
 
 
-</LinearLayout>
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@drawable/ic_launcher_background"
+       android:scaleType="centerCrop"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintDimensionRatio="16:9"
+       app:layout_constraintHorizontal_bias="0.947"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.481"
+       app:layout_constraintWidth="0dp" />
+
+   <TextView
+       android:id="@+id/view_a"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+
+       android:layout_marginLeft="16dp"
+       android:layout_marginTop="64dp"
+       android:text="View_a"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <TextView
+       android:id="@+id/view_b"
+       android:layout_width="106dp"
+       android:layout_height="20dp"
+       android:layout_marginLeft="16dp"
+       android:text="View_b"
+       android:textSize="20sp"
+       app:layout_constraintBottom_toTopOf="@id/view_a"
+       app:layout_constraintLeft_toRightOf="@+id/view_a"
+
+       app:layout_constraintTop_toBottomOf="@id/view_a"
+       app:layout_constraintVertical_bias="1.0" />
+
+   <TextView
+       android:id="@+id/View_c"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+
+       android:layout_marginLeft="76dp"
+       android:text="View_C"
+       app:layout_constraintLeft_toRightOf="@id/view_a"
+       app:layout_constraintTop_toBottomOf="@id/view_b" />
+
+   <TextView
+       android:id="@+id/leftView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="88dp"
+       android:layout_marginTop="24dp"
+       android:text="LeftView"
+       android:textSize="12sp"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <TextView
+       android:id="@+id/rightView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="72dp"
+       android:text="RightView"
+       android:textSize="20dp"
+       app:layout_constraintBaseline_toBaselineOf="@+id/leftView"
+       app:layout_constraintLeft_toRightOf="@+id/leftView" />
+
+   <Button
+       android:id="@+id/button3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Button"
+       app:layout_constraintEnd_toStartOf="@+id/button4"
+       app:layout_constraintHorizontal_bias="0.5"
+       app:layout_constraintHorizontal_chainStyle="spread"
+       app:layout_constraintStart_toStartOf="parent"
+       tools:layout_editor_absoluteY="253dp" />
+
+   <Button
+       android:id="@+id/button4"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Button"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.5"
+       app:layout_constraintHorizontal_chainStyle="spread"
+       app:layout_constraintStart_toEndOf="@+id/button3"
+       tools:layout_editor_absoluteY="253dp" />-->
+
+   <TextView
+       android:id="@+id/Viewhide1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="View hide1"
+       android:visibility="gone"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <TextView
+       android:id="@+id/viewhide2"
+       android:layout_width="125dp"
+       android:layout_height="54dp"
+       android:text="View_hide2"
+       app:layout_goneMarginLeft="50dp"
+       tools:layout_editor_absoluteX="176dp"
+       tools:layout_editor_absoluteY="173dp" />
+
+   <TextView
+       android:id="@+id/viewhide"
+       android:layout_width="125dp"
+       android:layout_height="54dp"
+       android:layout_marginStart="16dp"
+       android:text="View_hide2"
+       app:layout_constraintStart_toStartOf="@+id/guideline"
+       app:layout_goneMarginLeft="50dp"
+       tools:layout_editor_absoluteY="173dp" />
+
+   <androidx.constraintlayout.widget.Guideline
+       android:id="@+id/guideline"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       app:layout_constraintGuide_begin="126dp" />
+
+   <androidx.constraintlayout.widget.Guideline
+       android:id="@+id/guideline3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       app:layout_constraintGuide_begin="301dp" />
+
+   <!-- app: layout_constraints (x) to(y)Of="{Z}"
+         x - это constraint привязываемой view
+         y - это сторона View к которой мы привязались
+         z - id view к которому привязались
+   -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
